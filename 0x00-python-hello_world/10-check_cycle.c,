@@ -1,0 +1,57 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct Node {
+    int data;
+    struct Node* next;
+} Node;
+
+int check_cycle(Node* list) {
+    if (list == NULL) {
+        return 0; // No cycle if list is empty
+    }
+    
+    Node* slow = list;
+    Node* fast = list;
+    
+    while (fast != NULL && fast->next != NULL) {
+        slow = slow->next;
+        fast = fast->next->next;
+        
+        if (slow == fast) {
+            return 1; // Cycle detected
+        }
+    }
+    
+    return 0; // No cycle detected
+}
+
+int main() {
+    // Example usage
+    Node* list = (Node*)malloc(sizeof(Node));
+    Node* node1 = (Node*)malloc(sizeof(Node));
+    Node* node2 = (Node*)malloc(sizeof(Node));
+    
+    list->data = 1;
+    node1->data = 2;
+    node2->data = 3;
+    
+    list->next = node1;
+    node1->next = node2;
+    node2->next = list; // Creating a cycle
+    
+    int hasCycle = check_cycle(list);
+    
+    if (hasCycle) {
+        printf("The linked list has a cycle.\n");
+    } else {
+        printf("The linked list does not have a cycle.\n");
+    }
+    
+    free(list);
+    free(node1);
+    free(node2);
+    
+    return 0;
+}
+

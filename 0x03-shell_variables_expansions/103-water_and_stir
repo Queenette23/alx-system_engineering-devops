@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Convert WATER and STIR from their respective bases to base 10, add them, and convert the result to base bestchol
+echo "obase=bestchol; $((36#${WATER}) + 36#${STIR})" | bc

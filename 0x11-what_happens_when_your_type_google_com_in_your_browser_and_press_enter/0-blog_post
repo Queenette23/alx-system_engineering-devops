@@ -1,1 +1,29 @@
 
+What happens when you type google.com in your browser and press Enter
+
+"Have you ever marveled at the seemingly instantaneous results that appear on your screen when you type a URL into your browser and hit Enter? Behind the sleek interface of websites like Google lies a fascinating web of technologies working harmoniously to deliver the content you seek. As internet users, we often take for granted the intricate processes that occur in the blink of an eye each time we initiate a web request.
+
+"Have you also ever wondered what happens behind the scenes when you type a URL into your browser and hit Enter? The seamless experience of accessing a website like Google belies a complex series of steps that occur within seconds. In this blog post, we will unravel the intricate journey of a simple browser request to https://www.google.com, exploring the key components of the web stack and how they work together to deliver the web page to your screen. By understanding this process, you can gain insight into the inner workings of the internet and appreciate the technology that powers our everyday online interactions. 
+
+In this digital age where online interactions have become an integral part of our daily lives, understanding the inner workings of the web stack can provide valuable insights into the technology that powers our virtual world. From the initial DNS request to the final display of a web page, each step in the process plays a crucial role in ensuring a seamless and secure browsing experience.
+Join me on a journey through the layers of the web stack as we unravel the complexities behind the simple act of typing https://www.google.com into your browser. By shedding light on concepts such as DNS resolution, TCP/IP connections, HTTPS encryption, and load balancing mechanisms, we will demystify the magic that happens behind the scenes every time you access a website.
+Through this exploration, we will not only enhance our technical knowledge but also gain a deeper appreciation for the sophisticated infrastructure that underpins the internet as we know it. So, buckle up as we embark on a voyage through the digital realm, where every click of a button unveils a world of technology at work."
+
+
+My name is Queenette Jonas and in this article, we will take a journey from www. google .com all the way to Google website. Let's embark on a journey through the layers of the web stack and uncover the magic that happens when you initiate a web request." Let’s get started!
+
+
+1. DNS Request: When you type https://www.google.com in your browser, the first step is a Domain Name System (DNS) request. Your browser needs to resolve the domain name "www.google.com" to an IP address to locate the server.
+2. TCP/IP: Once the DNS lookup is complete, a Transmission Control Protocol (TCP) connection is established with the server using the Internet Protocol (IP). This connection allows for reliable communication between your browser and the server.
+3. Firewall: The request passes through any firewalls, which are security measures designed to monitor and control incoming and outgoing network traffic. The firewall ensures that the communication is safe and secure.
+4. HTTPS/SSL: With https://www.google.com, the connection is secured using Hypertext Transfer Protocol Secure (HTTPS) and Secure Sockets Layer (SSL) or Transport Layer Security (TLS) protocols. This encryption ensures that the data exchanged between your browser and the server is encrypted and secure.
+5. Load-Balancer: If Google uses a load balancer, the request may be directed to one of several servers behind the load balancer. Load balancers distribute incoming network traffic across multiple servers to ensure optimal resource utilization and prevent overload on any single server.
+6. Web Server: The request reaches Google's web server, which hosts the website's files and content. The web server processes the request and generates a response to send back to your browser.
+7. Application Server: In some cases, an application server may be involved to process dynamic content or interact with databases. The application server executes the necessary code to generate the content requested by your browser.
+8. Database: If the requested content requires data from a database, the application server retrieves the relevant information from the database server. This data is then used to dynamically generate the web page that you see in your browser.
+9. Response: response is then routed back through the web server and, if in place, the load balancer. Finally, it is returned to the browser, where it is rendered for the user to view and interact with.
+
+
+
+
+
